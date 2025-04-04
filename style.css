@@ -1,0 +1,297 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: bold;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-left:162px;
+    position: sticky;
+    top: 0;
+    margin-top: 10px;
+    background-color: white;
+}
+
+.navbar__s1__img{
+    width: 200px;
+    padding: 10px;
+    margin-right: 10px;
+    
+}
+
+.navbar__s2{
+    display: flex;
+    gap: 15px;
+
+}
+
+.navbar__s2 p:hover{
+    border-bottom: 1px solid gray;
+}
+
+.navbar__s3{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.navbar__s3 .currency{
+    margin-right: 15px;
+}
+
+.navbar__s3 img{
+    width: 30px;
+    height: 30px;
+    /* margin-top: 10px; */
+}
+
+.navbar__s3 button{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 20px;
+   margin-left: 5px;
+   cursor: pointer;
+    
+}
+
+.navbar__s4{
+    display: none;
+}
+
+
+.section__one{
+    margin-top: 50px;
+
+}
+
+.section__one h1{
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.section__one__list{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    font-size: 16px;
+    justify-content: center;
+   
+}
+
+.section__one__list p:hover{
+    border-bottom: 1px solid gray;
+}
+
+
+.section__one__search{
+    border: 1px solid gray;
+    display: flex;
+    border-radius: 30px;
+    width: 60%;
+    padding: 10px 20px;
+    gap: 10px;
+    position: relative;
+    align-items: center;
+    margin-left: 300px;
+    
+}
+.section__one__search input{
+    border:none;
+    width: 300px;
+    font-size: 18px;
+    padding: 10px;   
+}
+
+.section__one__search input:focus{
+    outline: none;
+}
+
+.section__one__search button{
+    background-color: #35E0A1;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;   
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+
+.bigimage{
+    margin-top: 40px;
+    margin-left: 160px;
+}
+.bigimage img{
+    width:90%;
+}
+
+.explore{
+    padding: 10px;
+    margin-left: 175px;
+    margin-right: 120px;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.explore__container{
+    display: flex;
+    /* gap: 30px; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.explore p{
+    color: gray;
+    margin: 10px;
+}
+
+.explore__title{
+    margin: 10px;
+}
+
+.explore img:hover{
+    transform: scale(1.1);
+    filter:opacity(0.8)
+}
+
+.beach-img{
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 10px;
+}
+
+.beach-img img{
+    width: 100%;
+   
+}
+
+.beach-img img:hover{
+    transform: scale(1.1);
+    filter:opacity(0.8)
+}
+
+.coimbatore__subtitle{
+    color: grey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.coimbatore{
+    padding: 10px;
+    margin-left: 175px;
+    margin-right: 120px;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+
+.coimbatore__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.travellers-choice img{
+    width: 100%;
+}
+
+.footer{
+    padding: 30px;
+    margin: 10px;
+    background-color: #F2F2F2;
+    font-size: 12px;
+}
+
+.footer p{
+
+    margin: 5px;
+}
+.footer__one{
+    display: flex;
+    margin-left: 170px;
+    gap: 10px;
+}
+
+.footer__two{
+    display: flex;
+    margin-left: 170px;
+    gap: 10px;
+    margin-top: 15px;
+    
+}
+
+.footer__two__s1 img{
+    width: 50px;
+}
+
+.footer__two__s2 select{
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 16px;
+    margin: 10px;
+    
+}
+
+.footer__one p:hover{
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+}
+.footer__two__s1 a{
+    color: gray;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:600px){
+
+.beach-img{
+    flex-basis: 40%;
+}
+.navbar__s2,.navbar__s3{
+    display: none;
+}
+.section__one p{
+    font-size: 8px;
+}
+.navbar__s4{
+    display: block;
+}
+.section__one__search{
+    display: none;
+}
+.footer__one{
+    display: none;
+}
+.travellers-choice img{
+    display: none;
+}
+.footer__two{
+    width: 50%;
+}
+.footer__two__s2{
+    display: none;
+}
+}
+
+@media screen and (max-width:800px){
+    body{
+        font-size: 10px;
+   
+    }
+}
