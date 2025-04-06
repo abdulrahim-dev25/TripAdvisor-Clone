@@ -84,6 +84,7 @@ body{
 
 .section__one__list{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
     margin: 20px 0;
@@ -107,6 +108,7 @@ body{
     position: relative;
     align-items: center;
     margin-left: 300px;
+    margin-right: 300px;
     
 }
 .section__one__search input{
@@ -169,6 +171,8 @@ body{
 }
 
 .beach-img{
+    display: flex;
+    flex-wrap: wrap;
     flex-grow: 1;
     flex-basis: 20%;
     margin: 10px;
@@ -257,7 +261,7 @@ body{
 }
 
 /* MEDIA QUERIES */
-
+/* 
 @media screen and (max-width:600px){
 
 .beach-img{
@@ -287,11 +291,129 @@ body{
 .footer__two__s2{
     display: none;
 }
+.section__one__list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: auto;
+}
 }
 
 @media screen and (max-width:800px){
     body{
         font-size: 10px;
    
+    }
+} */
+
+/* Media Queries */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .navbar__s2,
+    .navbar__s3 {
+        display: none;
+    }
+
+    .navbar__s4 {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .section__one__search {
+        width: 90%;
+        margin: 20px auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section__one__search input {
+        width: 100%;
+    }
+
+    .section__one__search button {
+        position: static;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .bigimage {
+        margin: 0 auto;
+    }
+
+    .bigimage img {
+        width: 100%;
+    }
+
+    .explore,
+    .coimbatore {
+        margin: 20px;
+    }
+
+    .explore__container,
+    .coimbatore__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .beach-img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer__one,
+    .footer__two {
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .footer__two__s2 select {
+        width: 100%;
+    }
+}
+
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+
+    .navbar__s1__img {
+        width: 150px;
+    }
+
+    .section__one h1 {
+        font-size: 36px;
+    }
+
+    .section__one__list {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .explore__title,
+    .coimbatore__title {
+        font-size: 20px;
+    }
+
+    .coimbatore__container,
+    .explore__container {
+        flex-direction: column;
+    }
+
+    .footer {
+        font-size: 10px;
+    }
+
+    .footer__two__s1 img {
+        width: 40px;
     }
 }
